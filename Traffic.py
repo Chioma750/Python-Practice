@@ -8,3 +8,4 @@ elif light_color == "green":
     print("Go!")
 else:
     print("Invalid color! That is not a traffic light color.")
+
