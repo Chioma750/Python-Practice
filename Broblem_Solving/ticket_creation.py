@@ -1,9 +1,14 @@
 def get_ticket_details():
 
-    title = input("Enter Ticket title: ").strip()
-    description = input("Enter Ticket description: ").strip()
+    while True:
+        title = input("Enter Ticket title: ").strip()
+        if title == "":
+            print("Invalid title.")
+            continue
+            
+        description = input("Enter Ticket description: ").strip()
 
-    return title, description
+        return title, description
 
 ticket_title, ticket_description = get_ticket_details()
 
