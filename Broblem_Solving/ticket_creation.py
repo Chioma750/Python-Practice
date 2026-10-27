@@ -5,8 +5,12 @@ def get_ticket_details():
         if title == "":
             print("Invalid title.")
             continue
-            
+
+    while True:  
         description = input("Enter Ticket description: ").strip()
+        if description == "":
+            print("Invalid description.")
+            continue
 
         return title, description
 
